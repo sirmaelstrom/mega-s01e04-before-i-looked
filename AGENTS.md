@@ -30,6 +30,16 @@ Read first: `docs/vision.md`, `docs/styleguide.md`. Decisions: `docs/adr/`.
 5. An issue is closed only when its "Done when" holds. If it can't hold yet, leave it open and
    say what it waits on.
 
+### Every issue carries
+
+- First line: `Source: plan.md § <n>`.
+- Scope.
+- Done when, in the plan's words.
+- Blocked by (`#n`).
+- The label `plan:<name>`.
+- It is closed with the closing comment above, and only when its Done when holds. If it can't
+  hold yet, it stays open and says what it waits on.
+
 ## Skills
 
 Shared skills live in `.agents/skills/`, one folder each, `SKILL.md` inside. That folder is the
