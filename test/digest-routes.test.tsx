@@ -86,6 +86,7 @@ describe('digest routes for a night with no file', () => {
   it('page: 404', async () => {
     const res = await app.request(`/digest/${MISSING}`);
     expect(res.status).toBe(404);
+    expect(await res.text()).toContain(`no run log for ${MISSING}`);
   });
 
   it('JSON: 404 with the error body', async () => {
